@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class AddNewRecipeTest extends TestBaseClass {
     private String Recipe = "New Recipe";
-    private String Ingredients = "ingred 1 , ingred 2";
+    private String Ingredients = "ingred 1 , ingred 2, ingred 3";
 
     @Test
     public void AddNewRecap() throws InterruptedException {
