@@ -18,7 +18,6 @@ public class TestBaseClass {
     DeleteRecipePage deleteRecipePage;
     WebDriver driver;
     private final String URL = "https://codepen.io/SedatUygur/pen/jWgJdv";
-
     @BeforeMethod
     public void setUp() {
 
