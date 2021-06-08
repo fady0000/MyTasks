@@ -32,7 +32,7 @@ public class TestBaseClass {
     }
     @AfterClass
     public void tearDown() {
-      // driver.quit();
+       driver.quit();
     }
 
     @BeforeSuite
