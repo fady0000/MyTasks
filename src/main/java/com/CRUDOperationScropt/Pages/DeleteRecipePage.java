@@ -8,13 +8,12 @@ public class DeleteRecipePage extends PageBaseClass{
     public DeleteRecipePage(WebDriver driver) {
         super(driver);
     }
-    private By deletedItem = By.linkText("Spaghetti");
-    private By deleteButton = By.id("btn-del1");
+    private By deletedItem = By.linkText("New Recipe");
+    private By deleteButton = By.id("btn-del3");
 
     @Step("Select Item To Delete")
     public void SelectDeletedItem(){
-        HandleIFrame("result");
-        clickButton(deletedItem);
+          clickButton(deletedItem);
     }
 
     @Step("Click On Delete")

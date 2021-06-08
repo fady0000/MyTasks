@@ -7,9 +7,8 @@ import com.google.common.collect.ImmutableMap;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.*;
+
 import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnvironmentWriter;
 
 public class TestBaseClass {
@@ -18,11 +17,10 @@ public class TestBaseClass {
     DeleteRecipePage deleteRecipePage;
     WebDriver driver;
     private final String URL = "https://codepen.io/SedatUygur/pen/jWgJdv";
-    @BeforeMethod
+
+    @BeforeClass
     public void setUp() {
-
         WebDriverManager.chromedriver().setup();
-
         driver = new ChromeDriver();
         homePage = new newRecipePage(driver);
         editOnRecipe = new EditOnRecipe(driver);
@@ -31,12 +29,10 @@ public class TestBaseClass {
         driver.navigate().to(URL);
         homePage.ChangeView();
 
-
     }
-
-    @AfterMethod
+    @AfterClass
     public void tearDown() {
-       driver.quit();
+      // driver.quit();
     }
 
     @BeforeSuite
