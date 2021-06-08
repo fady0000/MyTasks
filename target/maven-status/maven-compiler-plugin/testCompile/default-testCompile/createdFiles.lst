@@ -1,4 +1,3 @@
+com\CRUDOperationTask\TestCases\AddAndDeleteRecipe.class
 com\CRUDOperationTask\TestCases\TestBaseClass.class
-com\CRUDOperationTask\TestCases\DeleteRecipeTest.class
-com\CRUDOperationTask\TestCases\AddNewRecipeTest.class
 com\CRUDOperationTask\TestCases\EditOnRecipeTest.class

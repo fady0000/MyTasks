@@ -8,7 +8,7 @@ public class AddAndDeleteRecipe extends TestBaseClass {
     private String Ingredients = "ingred 1 , ingred 2";
 
     @Test
-    public void AddNewRecap() throws InterruptedException {
+    public void AddNewRecap(){
         homePage.AddNewRecipe();
         homePage.EnterIngredients(Ingredients);
         homePage.EnterRecipeName(Recipe);
@@ -16,10 +16,8 @@ public class AddAndDeleteRecipe extends TestBaseClass {
         Assert.assertTrue(driver.getPageSource().contains(Recipe));
 
     }
-
     @Test(dependsOnMethods = "AddNewRecap")
     public void DeleteRecipe() {
-
         deleteRecipePage.SelectDeletedItem();
         deleteRecipePage.DeleteItem();
         Assert.assertFalse(driver.getPageSource().contains("New Recipe"));

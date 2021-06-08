@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="28.857" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="24.049" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="15.0.1+9-18"/>
@@ -59,7 +59,7 @@
     <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="AddNewRecap" classname="com.CRUDOperationTask.TestCases.AddNewRecipeTest" time="1.258"/>
-  <testcase name="DeleteRecipe" classname="com.CRUDOperationTask.TestCases.DeleteRecipeTest" time="0.994"/>
-  <testcase name="EditOnRecipe" classname="com.CRUDOperationTask.TestCases.EditOnRecipeTest" time="1.45"/>
+  <testcase name="AddNewRecap" classname="com.CRUDOperationTask.TestCases.AddAndDeleteRecipe" time="1.64"/>
+  <testcase name="DeleteRecipe" classname="com.CRUDOperationTask.TestCases.AddAndDeleteRecipe" time="1.056"/>
+  <testcase name="EditOnRecipe" classname="com.CRUDOperationTask.TestCases.EditOnRecipeTest" time="1.614"/>
 </testsuite>
